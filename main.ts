@@ -6,7 +6,7 @@ basic.forever(function () {
 	
 })
 basic.forever(function () {
-    Temperature = smarthome.ReadTemperature(TMP36Type.TMP36_temperature_F, AnalogPin.P5)
+    Temperature = smarthome.ReadTemperature(TMP36Type.TMP36_temperature_F, AnalogPin.P8)
     OLED.writeString("Temp:")
     OLED.writeNum(Temperature)
     if (Temperature > 70) {
